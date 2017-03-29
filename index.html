@@ -1,0 +1,317 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css"/>
+        <style type="text/css">
+            @font-face {font-family: Jaapokki-Regular; src: url(Jaapokki-Regular.otf);}
+            
+            body{
+                top:0px;
+                left:0px;
+                line-height:24px;
+                font-size:16px;
+                margin-top:0px;
+                margin-left:0px;
+                background-color:#fff;
+                font-family:Jaapokki-Regular;
+                width:100%;
+            }
+            #headerbar{
+                position:absolute;
+                width:100%;
+                height:75px;
+                background-color:#fff;
+                opacity:1;
+                z-index:9;
+                padding:40px;
+                padding-left:0px;
+                padding-right:0px;
+            }
+            #links{
+                position:absolute;
+                margin-left:500px;
+                margin-top:20px;
+            }
+            #links a{
+                color:#fff;
+                text-decoration: none;
+            }
+            .link1{
+                display:inline-block;
+                position:absolute;
+                margin:5px;
+                padding:10px;
+                height:24px;
+                background:#ccc;
+                color:white;
+                -webkit-transition: ease-in-out .2s;
+            }
+            .link1:hover{
+                background:#FF8C36;
+                -webkit-transition: ease-in-out .2s;
+            }
+            .link2{
+                display:inline-block;
+                position:absolute;
+                margin:5px;
+                margin-left:80px;
+                padding:10px;
+                height:24px;
+                width:96px;
+                background:#ccc;
+                color:white;
+                overflow: visible;
+                -webkit-transition: ease-in-out .2s;
+            }
+            .link2:hover{
+                overflow:visible;
+                background:#2286DB;
+                -webkit-transition: ease-in-out .2s;
+            }
+            .link2:hover .thirdpro{
+                height:24px;
+                opacity:1;
+                padding:10px;
+                width:100px;
+                line-height:24px;
+                margin:5px;
+                margin-top:10px;
+                margin-left:10px;
+                background-color:#FF8C36;
+                -webkit-transition:ease-in-out .2s;
+            }
+            .thirdpro{
+                height:0px;
+                opacity:0;
+                margin:5px;
+                line-height:0px;
+                margin-top:20px;
+                width:100px;
+                display:inline-block;
+                padding:0px;
+                padding-left:10px;
+                padding-right:10px;
+                background-color:#FF8C36;
+                color:#fff;
+                -webkit-transition:ease-in-out .2s;
+            }
+            .link2:hover .thirdu{
+                height:24px;
+                padding:10px;
+                width:100px;
+                margin:5px;
+                opacity:1;
+                line-height:24px;
+                margin-top:-5px;
+                border-top:1px solid #fff;
+                margin-left:10px;
+                background-color:#2286DB;
+                -webkit-transition:ease-in-out .2s;
+            }
+            .thirdu{
+                height:0px;
+                margin:5px;
+                line-height:0px;
+                margin-top:10px;
+                opacity:0;
+                width:100px;
+                display:inline-block;
+                padding:0px;
+                padding-left:10px;
+                padding-right:10px;
+                background-color:#2286DB;
+                color:#fff;
+                -webkit-transition:ease-in-out .2s;
+            }
+            .link2:hover .thirddown{
+                height:24px;
+                opacity:1;
+                padding:10px;
+                width:100px;
+                margin:5px;
+                line-height:24px;
+                margin-top:-5px;
+                border-top:1px solid #fff;
+                margin-left:10px;
+                background-color:#FF8C36;
+                -webkit-transition:ease-in-out .2s;
+            }
+            .thirddown{
+                height:0px;
+                margin:5px;
+                opacity:0;
+                line-height:0px;
+                margin-top:10px;
+                width:100px;
+                display:inline-block;
+                padding:0px;
+                padding-left:10px;
+                padding-right:10px;
+                background-color:#FF8C36;
+                color:#fff;
+                -webkit-transition:ease-in-out .2s;
+            }
+            .link3{
+                display:inline-block;
+                position:absolute;
+                margin:5px;
+                width:150px;
+                margin-left:210px;
+                padding:10px;
+                height:24px;
+                background:#ccc;
+                color:white;
+                -webkit-transition: ease-in-out .2s;
+            }
+            .link3:hover{
+                background:#FF8C36;
+                -webkit-transition: ease-in-out .2s;
+            }
+            .link4{
+                display:inline-block;
+                position:absolute;
+                margin:5px;
+                width:32px;
+                margin-left:395px;
+                padding:10px;
+                height:24px;
+                background:#ccc;
+                color:white;
+                -webkit-transition: ease-in-out .2s;
+            }
+            .link4:hover{
+                background:#2286DB;
+                -webkit-transition: ease-in-out .2s;
+            }
+            .link5{
+                display:inline-block;
+                position:absolute;
+                margin:5px;
+                width:91px;
+                margin-left:462px;
+                padding:10px;
+                height:24px;
+                background:deepskyblue;
+                color:white;
+                -webkit-transition: ease-in-out .2s;
+            }
+            .link5:hover{
+                border-radius:15px 2px;
+                text-shadow:0px 0px 5px deepskyblue;
+                -webkit-transition: ease-in-out .2s;
+            }
+            .title{
+                position:absolute;
+                margin-top:10px;
+                color:#2286D8;
+                font-size:72px;
+                line-height:72px;
+                padding-left:40px;
+            }
+            .orange{
+                display:inline;
+                color:#FF8C36;
+            }
+            .ooo{
+                display:inline;
+                color:#FF8C36;
+            }
+            .slideshow{
+                position:absolute;
+                height:700px;
+                margin-left:0px;
+                margin-right:0px;
+                margin-top:155px;
+                width:100%;
+                background:#ccc;
+            }
+            .mySlides{
+                margin-left:0px;
+                
+                width:100%;
+                height:700px;
+            }
+            .textt{
+                color:#fff;
+                width:100%;
+                margin-top:600px;
+                text-align:center;
+                font-size:60px;
+                line-height:60px;
+            }
+            .textt2{
+                color:#fff;
+                width:80%;
+                margin-left:10%;
+                margin-top:500px;
+                text-align:center;
+                font-size:60px;
+                line-height:60px;
+            }
+            .textt3{
+                color:#fff;
+                width:50%;
+                margin-left:50%;
+                margin-top:20px;
+                text-align:center;
+                font-size:60px;
+                line-height:60px;
+            }
+            #about{
+                position:absolute;
+                width:100%;
+                text-align:center;
+                margin-top:855px;
+                padding-top:40px;
+                background:#fff;
+                font-size:30px;
+                color:#888888;
+                line-height:40px;
+            }
+            .bodytitle{
+                font-size:100px;
+                color:#444;
+                line-height:100px;
+            }
+            ::-webkit-scrollbar{
+                width:10px;
+            }
+            ::-webkit-scrollbar-track{
+                background-color:#ccc;
+            }
+        </style>
+        <title>Thirdparent</title>
+    </head>
+    <body>
+        <div id="headerbar">
+            <div class="title">third<div class="orange">parent</div></div>
+            <div id="links">
+            <a href="home.html">
+                <div class="link1">home</div></a>
+                
+                <div class="link2">our programs<br><a href="thirdpro.html"><div class="thirdpro">thirdpro</div></a><a href="thirdu.html"><div class="thirdu">thirdU</div></a><a href="thirddown.html"><div class="thirddown">thirddown</div></a><a href="thirdparent.html"><div class="thirdu">thirdparent</div></a></div>
+                
+                <div class="link3">resources for parents</div>
+                
+                <div class="link4">blog</div>
+                
+                <div class="link5">register now!</div>
+            </div>
+            
+        </div>
+        <div class="slideshow">
+            <div class="mySlides" style="background-image:url(hiring.jpg);background-size:cover;">
+                <div class="textt">helping <div class="ooo">you</div> streamline your hiring process.</div></div>
+            <div class="mySlides" style="background-image:url(boy.jpg);background-size:cover;">
+                <div class="textt2">ensuring that <div class="ooo">your</div> children are being responsible online.</div></div>
+            <div class="mySlides" style="background-image:url(study.jpg);background-size:cover;">
+                <div class="textt3">helping <div class="ooo">your</div> university find the best and the brightest.</div></div>
+        </div>
+        <div id="about">
+            <div class="bodytitle">About Us</div>ThirdParent was formed in 2013, when our principals were discussing various parenting challenges created by the internet and cell phones. As internet professionals and parents of teens ourselves, we saw that keeping our children safe while at the same time giving them access to the best opportunities, communities and information available was a difficult — but absolutely necessary mission. We adopted the mantra of “trust but verify.”<br>
+            <br>We set about to design a process wherein if parents give us a minimal amount of information (we care about privacy too), we can efficiently do an audit of a pre teen, teen or young adult’s public online persona, and arm families with the information necessary for successful online reputation management.<br><br>The process works. While our primary focus is families, we are in the early stages of engaging with middle schools, high schools and colleges. We believe that what we have learned in developing our process will be an educational tool for online citizens and leaders in any walk of life.</div>
+        <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
+        <script type="text/javascript" src="carousel.js"></script>
+    </body>
+</html>
